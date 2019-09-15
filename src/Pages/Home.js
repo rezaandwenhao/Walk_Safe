@@ -17,8 +17,8 @@ class Home extends React.Component {
     ).then(function (response) {
       self.setState({ divisions: response.data.features })
     }).catch(function (error) {
-        console.log(error);
-      });
+      console.log(error);
+    });
   }
 
   render() {
@@ -43,7 +43,8 @@ class Home extends React.Component {
             viewProperties={{
               center: [-79.3926, 43.6672],
               zoom: 10
-            }} />
+            }}>
+          </Map>
         </Form>
       </div>
     );
